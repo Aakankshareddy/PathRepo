@@ -333,29 +333,31 @@
                 }
               
  dindex[k]/=count;
-//  var div = document.createElement('div');
-//  div.className = "ui main container segment"
-//  document.body.appendChild(div);
+ var div = document.createElement('div');
+ div.className = "ui main container segment"
+ document.body.appendChild(div);
  var colour = "color"+k,
  	 duration = "duration"+k,
  	 distance = "distance"+k,
  	 safetyi = "safetyi"+k;
-//  div.innerHTML = '<ul class="msg"><li id='+colour+'></li><li id='+duration+'></li><li id='+distance+'></li><li id='+safetyi+'></li></ul>';
-  // document.getElementById(colour).innerHTML = "Route Number:  " + k + " is colored " +
-      // (color[k]) ;
-  //  document.getElementById(distance).innerHTML = "Distance  : " +
-      // (response.routes[k].legs[0].distance.text) ;
-    console.log((response.routes[i].legs[0].distance.value) / 1000 + "killo meters");
+ div.innerHTML = '<ul class="msg"><li id='+colour+'></li><li id='+duration+'></li><li id='+distance+'></li><li id='+safetyi+'></li></ul>';
+  document.getElementById(colour).innerHTML = "Route Number:  " + k + " is colored " +
+      (color[k]) ;
+   document.getElementById(distance).innerHTML = "Distance  : " +
+      (response.routes[k].legs[0].distance.text) ;
+    //console.log((response.routes[i].legs[0].distance.value) / 1000 + "killo meters");
     // Display the duration:
-    // document.getElementById(duration).innerHTML = "Time duration for reaching : " +
-      // response.routes[k].legs[0].duration.text;
+    document.getElementById(duration).innerHTML = "Time duration for reaching : " +
+      response.routes[k].legs[0].duration.text;
     console.log(response.routes[k].legs[0]);
   infoWindow.setPosition(posInit);
-  //  var message = 'dangerIndex is :'+dindex[k];
-  // document.getElementById(safetyi).innerHTML = message;
+   var message = 'dangerIndex is :'+dindex[k];
+  document.getElementById(safetyi).innerHTML = message;
   var dis='Route :'+k;
-   infoWindow.setContent(dis);
-            infoWindow.open(map);
+   //infoWindow.setContent(dis);
+      //       infoWindow.open(map);
+ 
+          
         }
           //  console.log(dindex);
 var routes = response.routes;
