@@ -49,6 +49,7 @@
 
       #mode-selector {
         color: #fff;
+        display: none;
         background-color: #4d90fe;
         margin-left: 12px;
         padding: 5px 11px 0px 11px;
@@ -72,7 +73,7 @@
     <input id="destination-input" class="controls" type="text"
         placeholder="Enter a destination location">
 
-    <!-- <div id="mode-selector" class="controls">
+    <div id="mode-selector" class="controls">
       <input type="radio" name="type" id="changemode-walking" checked="checked">
       <label for="changemode-walking">Walking</label>
 
@@ -81,7 +82,7 @@
 
       <input type="radio" name="type" id="changemode-driving">
       <label for="changemode-driving">Driving</label>
-    </div> -->
+    </div>
 
     <div id="map" class="ui container"></div>
        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDikSEauOEwjB5e8p-zXaZDg4jif4_lLZw&libraries=places"
