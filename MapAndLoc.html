@@ -248,8 +248,8 @@
         //   // This marker is 20 pixels wide by 32 pixels high.
         //    scaledSize: new google.maps.Size(23, 23),
         //  // size: new google.maps.Size(20, 32),
-    
         // };
+        
         color=["purple","yellow","green","blue","pink"];
             //me.directionsDisplay.setDirections(response);
            console.log(response.routes.length);
@@ -257,7 +257,6 @@
              for (var k = 0, len = response.routes.length; k < len; k++) {
               dindex[k]=0;
               var points = response.routes[k].overview_path;
-              //console.log("yayyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
               //console.log(points.length);
                new google.maps.DirectionsRenderer({
                     map: map,
@@ -269,7 +268,6 @@
                     strokeColor: color[k],
                     strokeOpacity: 0.7,
                     strokeWeight: 10
-
                 }
 
                 });
@@ -277,7 +275,7 @@
                //console.log(data);
                var  infoWindow = new google.maps.InfoWindow;
                var posInit;
-                        var count = 0;
+               var count = 0;
              for (var j = 0; j < points.length; j++) {
                       for (var i = 0; i < data.length; i++) {
                    
@@ -331,7 +329,7 @@
                   }
 
                 }
-              
+         
  dindex[k]/=count;
 //  var div = document.createElement('div');
 //  div.className = "ui main container segment"
@@ -363,8 +361,6 @@
 var routes = response.routes;
                     for (var j = 0; j < routes.length; j++) {
                         var points = routes[j].overview_path;
-                        
-    
                     }
                     
          
