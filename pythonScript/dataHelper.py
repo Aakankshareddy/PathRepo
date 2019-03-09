@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Jan  9 00:44:13 2018
-
-@author: hp
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -87,4 +81,3 @@ for i in range(0, 166):
         }
     ar.append(o)
 print(ar)
-'''
